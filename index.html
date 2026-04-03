@@ -20,7 +20,6 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/shine.css">
 
     <style>
-        /* 額外修復：確保 Music Video 按鈕在深色背景下清晰 */
         .btn-outline-light {
             border: 1px solid rgba(255,255,255,0.5);
             color: rgba(255,255,255,0.8) !important;
@@ -28,17 +27,17 @@
             font-size: 0.75rem;
             text-decoration: none;
             border-radius: 4px;
+            display: inline-block;
         }
         .btn-outline-light:hover {
             background: rgba(255,255,255,0.1);
             border-color: #fff;
+            color: #fff !important;
         }
-        .resume-position-title a {
-            text-decoration: none;
-            color: inherit;
-        }
-        .resume-position-title a:hover {
-            text-decoration: underline;
+        /* 確保標題沒有連結樣式 */
+        .resume-position-title {
+            color: #fff;
+            font-weight: 700;
         }
     </style>
 </head> 
@@ -100,7 +99,7 @@
                                                         <a href="https://sp.universal-music.co.jp/yorushika/gentou/" target="_blank" class="btn-outline-light">Official Site</a>
                                                     </div>
                                                 </div>
-                                                <h3 class="resume-position-title mb-1"><a href="https://open.spotify.com/album/43YyN4R6A7GkI1L4K9O6B8" target="_blank">幻燈 (Magic Lantern)</a></h3>
+                                                <h3 class="resume-position-title mb-1">幻燈 (Magic Lantern)</h3>
                                             </div>
                                             <div class="resume-timeline-item-desc">
                                                 <ul class="resume-timeline-list">
@@ -118,7 +117,7 @@
                                                         <a href="https://www.youtube.com/watch?v=CS4f3jawFxY" target="_blank" class="btn-outline-light">Music Video</a>
                                                     </div>
                                                 </div>
-                                                <h3 class="resume-position-title mb-1"><a href="https://open.spotify.com/album/4V07L71262D7V48E6h0V1X" target="_blank">盜作 (Plagiarism)</a></h3>
+                                                <h3 class="resume-position-title mb-1">盜作 (Plagiarism)</h3>
                                             </div>
                                             <div class="resume-timeline-item-desc">
                                                 <ul class="resume-timeline-list">
@@ -136,7 +135,7 @@
                                                         <a href="https://www.youtube.com/watch?v=KTZ-y85Erus" target="_blank" class="btn-outline-light">Music Video</a>
                                                     </div>
                                                 </div>
-                                                <h3 class="resume-position-title mb-1"><a href="https://open.spotify.com/album/1Y4L5S7Xv8u8i2qS6uXoR6" target="_blank">艾米與艾爾瑪 (Amy & Elma)</a></h3>
+                                                <h3 class="resume-position-title mb-1">艾米與艾爾瑪 (Amy & Elma)</h3>
                                             </div>
                                             <div class="resume-timeline-item-desc">
                                                 <ul class="resume-timeline-list">
@@ -165,7 +164,6 @@
                                               <div class="progress-bar resume-progress-bar" style="width: 98%"></div>
                                             </div>
                                         </li>
-                                        
                                     </ul>
                                 </section>
                                 <hr>
@@ -216,7 +214,7 @@
     </div>
 
     <footer class="footer text-center py-4">
-        <small class="copyright">Inspired by <span class="sr-only">love</span><i class="bi bi-heart-fill" style="color:#fe655c"></i> by <a class="theme-link" href="https://yorushika.com/" target="_blank">ヨルシカ Fan</a></small>
+        <small class="copyright">Inspired by <span class=\"sr-only\">love</span><i class="bi bi-heart-fill" style="color:#fe655c"></i> by <a class="theme-link" href="https://yorushika.com/" target="_blank">ヨルシカ Fan</a></small>
     </footer>
 
 </body>
